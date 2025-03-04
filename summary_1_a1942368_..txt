@@ -1,0 +1,72 @@
+Course: COMP SCI 7007 – Specialised Programming, Semester 1/2025.         
+
+Name:
+ID:
+Practice problem/Exam and number:
+
+Week:	
+
+
+
+*******************
+* Description  * 
+*******************
+
+
+1. List the problems you attempted, and Java API Classes and methods you used to solve each problem.
+I attempted the below problems:
+	AlternateColors
+	ChangingString
+	
+
+[Eg. SlowKeyBoard: ArrayList (size, add, get), Arrays.sort]
+
+Problem1: min method of Math api was used
+
+
+
+Problem2:java.util.Arrays Class was used
+Arrays.sort method was used
+Used to sort the differences array in ascending order.
+
+
+*******************
+* Challenges  * 
+*******************
+2. What challenges have you faced to solve the given problems?
+
+Problem1: The challenge was to deduce the different cases that were possible for different inputs. Then generalising the solution and developing an algorithm.
+
+
+
+Problem2: The challenge was to minimize the distance correctly while adhering to the constraint of K changes.
+
+
+
+
+************************
+* Solution Approach  *
+************************
+
+3. Discuss how you approach the problem and how you solve the problem.
+Problem1: I started with iterating through different inputs by writing it down in my notebook. Then I observed that the full cycle will be the minimum value of r,g and b. So if k was lower than the total ball count in full cycles I can calculate the remainder when k is divided by 3 and based on output I can return the output based on that. The second scenario was if k is greater than the total ball count in full cycle. When this happens I can simply reset k,r,g and b values. The new k will be k minus the total balls that has been destroyed and r,g and b value will be updated to the remaining number of red, green and blue balls respectively. Then from there it was simply the matter of going in r,g then b order and check if k is smaller or equal to their value then return that color else update the k value by subtracting the r or g value from it as those balls will be destroyed. 
+
+Problem2: To solve the problem, I first computed the absolute differences between corresponding characters in strings A and B and store them in an array. Then sort this array in descending order to prioritise reducing the largest differences first. Then modify exactly K characters by setting the K largest differences to zero, minimizing the total distance. If K is greater than the number of nonzero differences, use the remaining changes arbitrarily, increasing the distance by 1 per extra change if needed. 
+
+4. What did you learn from the problem? How this problem type of problems will help you to be a better problem solver?
+I learnt the importance of breaking down a problem into different case scenarios. Then I learnt how to approach individual cases and see how they correlate. This type of problems helps me improve my analytical skills and breaking down complicated problems into smaller cases and solving them to solve the whole problem.
+ 
+
+5. Which area you focused on improving (eg. speed, fluency, algorithmic design,  coding)?
+I focused on improving algorithmic design to cover all edge cases and I focused on coding.
+
+
+
+6. What are your goals for the next practice problems? 
+My goals for next practice problems will be to try to develop the algorithm faster as it took quite some time for these two problems.
+
+
+7. Have you used any AI tool such as ChatGPT? How have you used it and explain this tool is helping you to be a better problem solver?
+
+No, since I have few years of experience working with Java, I did not need any assistance.
+
